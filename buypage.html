@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    form {
+      width: 400px;
+      height: auto;
+      background-color: rgb(229, 71, 129);
+      padding: 16px 6px;
+      justify-content: center;
+      border-radius: 14px;
+    }
+    .name-control{
+        margin: 0 auto;
+        display: flex;
+    }
+     .name{
+        width: 100%;
+        text-align: center;
+     }
+     input{
+        margin: 4px auto;
+        display: block;
+        border-radius: 4px;
+        border: none;
+        height: 24px;
+     }
+     .contact{
+        flex-direction: column;
+        display: flex;
+        padding: 0 14px;
+     }
+     .comment{
+        flex-direction: column;
+        display: flex;
+        padding: 0 14px;
+     }
+     .distict{
+        flex-direction: column;
+        display: flex;
+        padding: 0 14px;
+     }
+  </style>
+  <body style="display: flex; justify-content: center;flex-direction: column;">
+    <div style="margin-top: 8%;">
+        <h2 style="text-align: center;">Please white form</h2>
+    </div>
+    <form style="margin: 0 auto;">
+      <div class="name-control">
+        <div class="name"><label for="">Name </label>
+        <input type="text"placeholder="Name" ></div>
+        <div class="name"><label for="">Surname </label>
+        <input type="text"placeholder="Surname" ></div>
+      </div>
+      <div class="contact">
+        <label for="Contact">Contact</label>
+        <input type="text" style="margin: 4px 0; padding: 4px;" placeholder="205XXXXXX ">
+      </div>
+      <label for="" style="padding: 0 14px;display: block; text-align: center;">District,Home,province</label>
+      <div class="distict" style="display: flex;max-width: 300px;margin: 0 auto;">
+        <div style="display: flex;">
+            <input type="text" placeholder="Distict" style="width: 90px;">
+        <input type="text" placeholder="Home" style="width: 90px;">
+        <input type="text" placeholder="province" style="width: 90px;">
+        </div>
+      </div>
+      <div class="comment">
+        <label>Comment</label>
+        <input type="text" style="margin: 4px 0; padding: 4px;height: 100px; text-align: start;" placeholder="Comment your position">
+      </div>
+    </form>
+    <div style="display: flex;">
+      <button style="margin: 10px auto;padding: 8px;"onclick="Showmessage()">Save</button>
+    </div>
+    <p id="message" style="text-align: center;"></p>
+    <script>
+        function Showmessage(){
+            document.getElementById('message').innerHTML = "Thanks you";
+        }
+    </script>
+  </body>
+</html>
